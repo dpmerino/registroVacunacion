@@ -1,0 +1,75 @@
+<mat-dialog-content id='print'>
+    <div class="main" >
+        <div class="paciente-title">
+            <h2>Informacion del Paciente</h2>
+        </div>
+        <div class="paciente-info">
+            <div class="column column-label">
+                <p>Nro Cedula</p>
+                <p>Nobres</p>
+                <p>Apellidos</p>
+                <p>Lugar de Residencia</p>
+                <p>Fecha de Nacimiennto</p>
+                <p>Sexo</p>
+            </div>
+            <div class="column column-data">
+                <p>{{data.idPaciente}}</p>
+                <p>{{data.nombresPaciente}}</p>
+                <p>{{data.apellidosPaciente}}</p>
+                <p>{{data.domicilio}}</p>
+                <p>{{data.fechaNacimientoPaciente}}</p>
+                <p>{{data.sexo}}</p>
+            </div>
+            <div class="column img-user">
+                <img src="./../../assets/Asset 6@4x 1.png" alt="">
+            </div>
+        </div>
+        <div class="subTitles">
+            <div class="tile-vacuna">
+                <h3>Informacion Vacunacion</h3>
+            </div>
+            <div class="tile-vacunante">
+                <h3>Informacion del Vacunante</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-section">
+                <div class="column column-label">
+                    <p>Provincia</p>
+                    <p>Ciudad</p>
+                    <p>Centro de Vacunancion</p>
+                    <p>Tipo de  Vacuna</p>
+                    <p>Dosis</p>
+                    <p>Fecha primemra dosis</p>
+                    <p>Fecha segunda dosis</p>
+                </div>
+                <div class="column column-data">
+                    <p>{{data.provincia}}</p>
+                    <p>{{data.ciudad}}</p>
+                    <p>{{data.recinto}}</p>
+                    <p>{{data.nombreVacuna}}</p>
+                    <p>{{data.dosis}}</p>
+                    <p>{{data.fecha_1_dosis}}</p>
+                    <p>{{data.fecha_2_dosis}}</p>
+                </div>
+            </div>
+            <div class="column column-section">
+                <div class="column column-label">
+                    <p>Nro de Cedula</p>
+                    <p>Nombres</p>
+                    <p>Apellidos</p>
+                </div>
+                <div class="column column-data">
+                    <p>{{data.idProfesional}}</p>
+                    <p>{{data.nombresProfesional}}</p>
+                    <p>{{data.apellidosProfesional}}</p>
+                </div>
+                <div class="column img-user">
+                    <img id="img-2" src="./../../assets/Asset 6@4x 1.png" alt="">
+                </div>
+            </div>
+        </div> 
+        <button mat-button (click)='confirmar()'>{{data.btn_text}}</button>
+    </div>
+    
+</mat-dialog-content>
